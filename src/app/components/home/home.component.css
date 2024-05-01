@@ -1,0 +1,189 @@
+
+
+.container {
+  width: 90%;
+  margin: 50px auto;
+
+}
+  .datas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .box {
+    min-height: 250px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .box p {
+    font-weight: 500;
+    font-size: 2.5vw;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .box h4 {
+    font-weight: 800;
+    font-size: 4vw;
+    padding: 20px 0;
+  }
+
+  .humidity {
+    background: #f8493a;
+    width: 40%;
+  }
+  .humidity button {
+    height: 100%;
+    width: 400px;
+    background: #03a96d;
+    border: none;
+    color: white;
+    font-size: 2.5vw;
+    max-width: 50%;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .data {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+  }
+
+
+
+  .ambient {
+    background: #f5e232;
+    width: 30%;
+    color: black;
+  }
+
+  .forum {
+    background: #5e9700;
+    width: 25%;
+  }
+
+  .forum img {
+    height: 100px;
+    cursor: pointer;
+  }
+
+  .addPlant {
+    margin: 10px 0;
+  }
+
+  .addPlant button {
+    background: #FF8524;
+    font-size: 1.5vw;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 100px 10px 30px;
+    cursor: pointer;
+
+    span {
+      font-weight: 900;
+      margin-right: 40px;
+    }
+  }
+
+  .plants{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+
+
+
+
+
+
+
+
+.form-section{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  z-index: 100;
+}
+
+.form-plant {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: white;
+  padding: 30px;
+  width: 90%;
+  max-width: 350px;
+  border-radius: 10px;
+}
+.form-plant h2{
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.input-box{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px ;
+}
+
+.input-box label{
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.input-box input, textarea{
+  border: 1px solid #83D96D;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.input-box input:focus,
+.input-box textarea:focus {
+  border: 3px solid #83D96D;
+  outline: none;
+}
+
+.range{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+
+  input{
+    width: 25%;
+    margin: 0 10px;
+  }
+}
+
+.form-plant .actions{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.form-plant .actions button{
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  font-weight: bold;
+  height: 40px;
+  width: 48%;
+  cursor: pointer;
+}

@@ -1,0 +1,29 @@
+
+footer{
+  background-color: #338E47;
+  padding: 20px;
+
+}
+footer p{
+  color: white;
+  font-size: 1em;
+  margin: 0;
+}
+footer .container{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer .container img{
+  height: 30px;
+}
+@media (min-width: 700px){
+
+  footer .container{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}

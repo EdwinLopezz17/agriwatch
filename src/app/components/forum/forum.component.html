@@ -1,0 +1,77 @@
+
+<div class="container">
+  <h2>Forum</h2>
+
+  <div class="content">
+
+    <section class="questions">
+
+
+      <div class="question-box">
+        <label>Julian Alvarez</label>
+        <p (click)="changeShowAnswers()">¿A que temperatura debe cultivarse las flores Irlandezas?</p>
+      </div>
+      <div class="question-box">
+        <label>Julian Alvarez</label>
+        <p (click)="changeShowAnswers()">¿A que temperatura debe cultivarse las flores Irlandezas?</p>
+      </div>
+      <div class="question-box">
+        <label>Julian Alvarez</label>
+        <p (click)="changeShowAnswers()">¿A que temperatura debe cultivarse las flores Irlandezas?</p>
+      </div>
+      <div class="question-box">
+        <label>Julian Alvarez</label>
+        <p (click)="changeShowAnswers()">¿A que temperatura debe cultivarse las flores Irlandezas?</p>
+      </div>
+      <div class="question-box">
+        <label>Julian Alvarez</label>
+        <p (click)="changeShowAnswers()">¿A que temperatura debe cultivarse las flores Irlandezas?</p>
+      </div>
+
+
+
+    </section>
+
+    <section class="new-question">
+      <label>Leave a new question</label>
+      <textarea></textarea>
+      <button>Add</button>
+    </section>
+
+  </div>
+
+  <section class="answers-content" *ngIf="showAnswers" (click)="changeShowAnswers()">
+    <div class="answers" (click)="$event.stopPropagation()">
+      <h4>¿A que temperatura debe cultivarse las flores Irlandezas?</h4>
+      <div class="answers-list">
+        <div class="answers-box">
+          <label>Edwin Lopez</label>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet!</p>
+        </div>
+        <div class="answers-box">
+          <label>Edwin Lopez</label>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet!</p>
+        </div>
+        <div class="answers-box">
+          <label>Edwin Lopez</label>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet!</p>
+        </div>
+        <div class="answers-box">
+          <label>Edwin Lopez</label>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet!</p>
+        </div>
+
+      </div>
+
+      <div class="write-answer">
+        <textarea></textarea>
+      </div>
+
+    </div>
+
+  </section>
+
+</div>
+
+
+

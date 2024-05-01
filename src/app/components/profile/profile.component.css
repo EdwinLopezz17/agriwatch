@@ -1,0 +1,45 @@
+
+.container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.container .img{
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  img{
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+}
+.datas{
+  width: 50%;
+}
+
+
+.input-box{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px ;
+  width: 40%;
+}
+
+.input-box label{
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+.input-box input{
+  border: 1px solid #83D96D;
+  font-size: 1.3rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.input-box input:focus,
+.input-box textarea:focus {
+  border: 3px solid #83D96D;
+  outline: none;
+}

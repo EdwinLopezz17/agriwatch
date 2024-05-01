@@ -1,0 +1,89 @@
+
+<div class="container">
+
+  <section class="datas">
+    <div class="box humidity">
+      <p>Ambient humidity</p>
+      <div class="data">
+        <h4>60%</h4>
+        <button>Active Irrigation</button>
+      </div>
+    </div>
+
+    <div class="box ambient">
+      <p>Ambient <br> Temperature</p>
+      <h4>22 C</h4>
+    </div>
+
+    <div class="box forum">
+      <p>Forum</p>
+      <img src="./assets/images/forumLogo.png" alt="#" routerLink="/forum">
+    </div>
+
+  </section>
+
+  <section class="addPlant">
+    <button (click)="changeShowAddPlant()"><span>+</span> Add Plant</button>
+  </section>
+
+  <section class="plants">
+    <app-plant-card></app-plant-card>
+    <app-plant-card></app-plant-card>
+    <app-plant-card></app-plant-card>
+    <app-plant-card></app-plant-card>
+    <app-plant-card></app-plant-card>
+    <app-plant-card></app-plant-card>
+  </section>
+
+
+  <div class="form-section" *ngIf="showAddPlant" >
+    <form class="form-plant">
+      <h2>New Plant</h2>
+      <div class="input-box">
+        <label for="plantName">Name*:</label>
+        <input type="text" id="plantName" name="plantName" required>
+      </div>
+      <div class="input-box">
+        <label>Scientific name:</label>
+        <input type="text" id="scientificName" >
+      </div>
+      <div class="input-box">
+        <label>Plant image url:</label>
+        <input type="text" id="imageUrl">
+      </div>
+      <div class="input-box">
+        <label>Description:</label>
+        <textarea id="description"></textarea>
+      </div>
+
+      <div class="input-box">
+        <label>Ideal temperature*:</label>
+        <div class="range">
+          <input id="idealTemperatureMin"  required type="number">
+          <p>to</p>
+          <input id="idealTemperatureMax"  required type="number">
+        </div>
+      </div>
+      <div class="input-box">
+        <label>Ideal Humidity*:</label>
+        <div class="range">
+          <input id="idealHumidityMin"  required type="number">
+          <p>to</p>
+          <input id="idealHumidityMax"  required type="number">
+        </div>
+      </div>
+
+
+
+      <div class="actions">
+        <button type="button" (click)="changeShowAddPlant()" style="background: #F8493A">Cancel</button>
+        <button type="submit" style="background: #338E47">Add</button>
+      </div>
+
+    </form>
+
+
+  </div>
+
+
+</div>

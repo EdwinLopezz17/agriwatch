@@ -1,0 +1,40 @@
+
+header{
+  background: #338E47;
+  height: 80px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+
+  .logo{
+    img{
+      height: 60px;
+      cursor: pointer;
+    }
+  }
+
+  .actions{
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .action{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 25px;
+
+    img{
+      height: 40px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    p {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: white;
+    }
+  }
+}
+
